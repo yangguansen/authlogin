@@ -21,7 +21,6 @@ export default async function LoginPage() {
         <form
           action={async () => {
             "use server"
-            console.log(signIn);
             await signIn("google", {redirectTo: '/auth'})
           }}
         >
